@@ -105,3 +105,23 @@ nav {
     padding: 0 30px;
   }
 }
+.btn {
+  padding: 12px 24px;
+  background-color: #8a79f0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6f5ee6;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
