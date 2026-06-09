@@ -177,3 +177,9 @@ nav {
   color: var(--text-dark);
   text-align: center;
 }
+
+.section__description {
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.5rem;
+}
