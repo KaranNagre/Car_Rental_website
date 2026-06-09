@@ -125,3 +125,16 @@ nav {
 .btn:active {
   transform: translateY(0);
 }
+
+/* Header section  */
+
+.header__container {
+  padding-top: 5rem;
+  display: grid;
+}
+
+.header__image {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
