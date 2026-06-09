@@ -110,9 +110,9 @@ nav {
   background-color: #8a79f0;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-size: 1rem;
-  font-weight: 600;
+  outline: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -124,6 +124,39 @@ nav {
 
 .btn:active {
   transform: translateY(0);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  max-width: 35px;
+}
+
+.logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Header section  */
