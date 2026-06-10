@@ -37,3 +37,35 @@ ScrollReveal().reveal(".header__content .section__description", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+ScrollReveal().reveal(".subscribe__content form", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+const form = document.querySelector(".header__form form");
+
+form.addEventListener("submit", (e) => {
+  const location = document.getElementById("location").value;
+  const start = document.getElementById("start").value;
+  const stop = document.getElementById("stop").value;
+
+  if (!location || !start || !stop) {
+    e.preventDefault();
+    alert("Please fill all fields");
+  }
+});
