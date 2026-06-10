@@ -260,3 +260,58 @@ ul {
 .header__form .btn {
   padding: 15px 17px;
 }
+
+/* How it work  */
+
+.about__container .section__description {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+
+.about__grid {
+  display: grid;
+  gap: 2rem 1rem;
+}
+
+.about__card {
+  max-width: 300px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about__card span {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  padding: 16px 20px;
+  border-radius: 1.25rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about__card:nth-child(1) span {
+  color: #8a79f0;
+  background-color: #eeebfd;
+}
+
+.about__card:nth-child(2) span {
+  color: #fba55b;
+  background-color: #fff2e8;
+}
+
+.about__card:nth-child(3) span {
+  color: #ee6a6f;
+  background-color: #fde9ea;
+}
+
+.about__card h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.about__card p {
+  color: var(--text-light);
+  line-height: 1.5rem;
+}

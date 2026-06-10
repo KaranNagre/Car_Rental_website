@@ -69,4 +69,3 @@ form.addEventListener("submit", (e) => {
     alert("Please fill all fields");
   }
 });
-
