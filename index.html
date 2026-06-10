@@ -58,6 +58,25 @@
             </div>
         </div>
     </header>
+
+    <!-- form section -->
+    <section class="header__form">
+        <form action="/">
+            <div class="input__group">
+                <label for="location">Pick up & Return location</label>
+                <input type="text" name="location" id="location" placeholder="Dallas, Texas" required />
+            </div>
+            <div class="input__group">
+                <label for="start">Pick up date</label>
+                <input type="datetime-local" name="start" id="start" required />
+            </div>
+            <div class="input__group">
+                <label for="stop">Return date</label>
+                <input type="datetime-local" name="stop" id="stop" required />
+            </div>
+            <button class="btn">Search <i class="ri-search-line"></i></button>
+        </form>
+    </section>
 </body>
 
 </html>
