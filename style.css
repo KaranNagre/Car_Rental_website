@@ -268,15 +268,17 @@ ul {
 
 .section__header {
   text-align: center;
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
+  margin-top: 5rem;
   font-size: 3rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .about__container .section__description {
   max-width: 600px;
   margin-inline: auto;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  /* margin-bottom: 4rem; */
 }
 
 .about__grid {
@@ -328,4 +330,24 @@ ul {
 .about__card p {
   color: var(--text-light);
   line-height: 1.5rem;
+}
+
+/* Most popular car deals */
+
+.deals {
+  background-color: var(--extra-light);
+}
+
+.section__header1 {
+  text-align: center;
+  /* padding: 5rem 0; */
+  margin-top: 5rem;
+  font-size: 3rem;
+  /* margin-bottom: 1rem; */
+}
+
+.deals__container .section__description {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
 }
