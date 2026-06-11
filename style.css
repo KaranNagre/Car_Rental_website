@@ -351,3 +351,27 @@ ul {
   margin-inline: auto;
   margin-bottom: 4rem;
 }
+
+/* search box  */
+
+.search__box {
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.search__box input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: 0.3s;
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+.search__box input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(138, 121, 240, 0.2);
+}
