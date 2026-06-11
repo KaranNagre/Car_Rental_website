@@ -277,14 +277,18 @@ ul {
 }
 
 .about__grid {
-  display: grid;
-  gap: 2rem 1rem;
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 4rem;
 }
 
 .about__card {
   max-width: 300px;
   margin-inline: auto;
   text-align: center;
+
 }
 
 .about__card span {
