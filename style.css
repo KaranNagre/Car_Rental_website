@@ -263,6 +263,13 @@ ul {
 
 /* How it work  */
 
+.section__header{
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 .about__container .section__description {
   max-width: 600px;
   margin-inline: auto;
