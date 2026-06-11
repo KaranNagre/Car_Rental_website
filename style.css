@@ -25,6 +25,7 @@ nav {
   left: 0;
   z-index: 100;
 }
+
 .nav__header {
   display: flex;
   justify-content: space-between;
@@ -105,6 +106,7 @@ nav {
     padding: 0 30px;
   }
 }
+
 .btn {
   padding: 12px 24px;
   background-color: #8a79f0;
@@ -125,6 +127,7 @@ nav {
 .btn:active {
   transform: translateY(0);
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -263,7 +266,7 @@ ul {
 
 /* How it work  */
 
-.section__header{
+.section__header {
   text-align: center;
   padding: 5rem 0;
   font-size: 3rem;
@@ -278,10 +281,10 @@ ul {
 
 .about__grid {
   display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-top: 4rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 
 .about__card {
