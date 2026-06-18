@@ -651,3 +651,45 @@ ul {
   color: var(--text-light);
   line-height: 1.5rem;
 }
+
+/* contact css */
+
+.contact {
+  padding-block: 5rem;
+}
+
+.contact form {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(138, 121, 240, 0.2);
+}
+
+.contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact .btn {
+  width: fit-content;
+  justify-self: center;
+  padding: 0.8rem 2rem;
+}
