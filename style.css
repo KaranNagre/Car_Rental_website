@@ -393,6 +393,15 @@ ul {
   background-color: var(--white);
 }
 
+.tab__content {
+  display: none;
+}
+
+.tab__content.active {
+  display: grid;
+  gap: 1rem;
+}
+
 .deals__tabs .btn.active {
   color: var(--white);
   background-color: var(--primary-color);
