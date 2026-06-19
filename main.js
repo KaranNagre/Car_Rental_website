@@ -120,44 +120,50 @@ const swiper = new Swiper(".swiper", {
 
 const form = document.querySelector(".header__form form");
 
-form.addEventListener("submit", (e) => {
-  const location = document.getElementById("location").value;
-  const start = document.getElementById("start").value;
-  const stop = document.getElementById("stop").value;
+if (form) {
+  form.addEventListener("submit", (e) => {
+    const location = document.getElementById("location").value;
+    const start = document.getElementById("start").value;
+    const stop = document.getElementById("stop").value;
 
-  if (!location || !start || !stop) {
-    e.preventDefault();
-    alert("Please fill all fields");
-  }
-});
+    if (!location || !start || !stop) {
+      e.preventDefault();
+      alert("Please fill all fields");
+    }
+  });
+}
 
 const search = document.getElementById("search");
 
-search.addEventListener("keyup", () => {
-  const value = search.value.toLowerCase();
+if (search) {
+  search.addEventListener("keyup", () => {
+    const value = search.value.toLowerCase();
 
-  document.querySelectorAll(".deals__card").forEach((card) => {
-    const carName = card.querySelector("h4").textContent.toLowerCase();
+    document.querySelectorAll(".deals__card").forEach((card) => {
+      const carName = card.querySelector("h4").textContent.toLowerCase();
 
-    card.style.display = carName.includes(value) ? "block" : "none";
+      card.style.display = carName.includes(value) ? "" : "none";
+    });
   });
-});
+}
 
 const themeBtn = document.getElementById("theme-btn");
 
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  themeBtn.textContent = "☀️";
-}
-
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
+if (themeBtn) {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
     themeBtn.textContent = "☀️";
-  } else {
-    localStorage.setItem("theme", "light");
-    themeBtn.textContent = "🌙";
   }
-});
+
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      themeBtn.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      themeBtn.textContent = "🌙";
+    }
+  });
+}
