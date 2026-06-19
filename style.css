@@ -864,3 +864,22 @@ body.dark .header__form form {
 body.dark .header__form input[type="datetime-local"] {
   color-scheme: dark;
 }
+
+/* screen size */
+@media (width > 540px) {
+  .about__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deals__container .tab__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .choose__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
