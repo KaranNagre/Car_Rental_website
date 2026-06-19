@@ -1077,3 +1077,15 @@ body.dark .header__form input[type="datetime-local"] {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* screen size with 1024px */
+
+@media (width > 1024px) {
+  .deals__container .tab__content {
+    gap: 1.5rem;
+  }
+
+  .deals__card {
+    padding: 1.5rem;
+  }
+}
