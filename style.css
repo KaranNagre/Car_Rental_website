@@ -927,7 +927,7 @@ body.dark .header__form input[type="datetime-local"] {
 
   .nav__logo span {
     font-size: 1.5rem;
-    color: var(--primary-color-dark);
+    color: white;
   }
 
   .nav__menu__btn {
@@ -945,7 +945,7 @@ body.dark .header__form input[type="datetime-local"] {
 
   .nav__links a {
     font-weight: 500;
-    color: var(--text-dark);
+    color: white;
   }
 
   .nav__links li:last-child {
