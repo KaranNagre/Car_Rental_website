@@ -2,8 +2,7 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
   const isOpen = navLinks.classList.contains("open");
@@ -38,6 +37,68 @@ ScrollReveal().reveal(".header__content .section__description", {
   delay: 1500,
 });
 
+ScrollReveal().reveal(".header__form form", {
+  ...scrollRevealOption,
+  delay: 2000,
+});
+
+ScrollReveal().reveal(".about__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+const tabs = document.querySelector(".deals__tabs");
+
+tabs.addEventListener("click", (e) => {
+  const tabContents = document.querySelectorAll(
+    ".deals__container .tab__content"
+  );
+  Array.from(tabs.children).forEach((item) => {
+    if (item.dataset.id === e.target.dataset.id) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+  tabContents.forEach((item) => {
+    if (item.id === e.target.dataset.id) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+});
+
+ScrollReveal().reveal(".choose__image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+ScrollReveal().reveal(".choose__content .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".choose__content .section__description", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".choose__card", {
+  duration: 1000,
+  delay: 1500,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".subscribe__image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".subscribe__content .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".subscribe__content .section__description", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
 ScrollReveal().reveal(".subscribe__content form", {
   ...scrollRevealOption,
   delay: 1500,
@@ -68,4 +129,16 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     alert("Please fill all fields");
   }
+});
+
+const search = document.getElementById("search");
+
+search.addEventListener("keyup", () => {
+  const value = search.value.toLowerCase();
+
+  document.querySelectorAll(".deals__card").forEach((card) => {
+    const carName = card.querySelector("h4").textContent.toLowerCase();
+
+    card.style.display = carName.includes(value) ? "block" : "none";
+  });
 });
