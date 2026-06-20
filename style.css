@@ -921,11 +921,11 @@ body.dark .header__form input[type="datetime-local"] {
   }
 
   .nav__logo .logo-dark {
-    display: flex;
+    display: block;
   }
 
   .nav__logo .logo-white {
-    display: none;
+    display: block;
   }
 
   .nav__logo span {
